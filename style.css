@@ -1,7 +1,9 @@
 body {
-    font-family: Arial;
+    font-family: 'Segoe UI', sans-serif;
+    background: #e0f0ff;
     margin: 0;
-    background: #f5f5f5;
+    padding: 0;
+    color: #222;
 }
 
 header {
@@ -11,30 +13,66 @@ header {
     padding: 40px;
 }
 
+/* Container général */
 section {
-    padding: 40px;
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
+    padding: 40px 20px;
 }
 
+/* Cartes projets */
 .project {
-    background: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    /* animation douce */
+    background: linear-gradient(135deg, #ffffff, #cce4ff);
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background 0.35s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
 }
 
+/* Titres et textes */
+.project h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #0056b3;
+    transition: color 0.35s ease;
+}
+
+.project p {
+    color: #333;
+}
+
+/* Ligne animée en bas */
+.project::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: #0077ff;
+    transition: width 0.35s ease;
+}
+
+/* Hover dynamique */
 .project:hover {
-    transform: translateY(-5px);
-    /* lève légèrement la carte */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    /* ombre plus prononcée */
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.25);
+    background: linear-gradient(135deg, #99ccff, #3399ff);
 }
 
-a {
+.project:hover h3 {
+    color: #ffffff;
+}
+
+.project:hover::after {
+    width: 100%;
+}
+
+*/ a {
     color: #0077ff;
     text-decoration: none;
 }
