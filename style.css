@@ -1,5 +1,5 @@
 body {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', 'Inter', 'Segoe UI', sans-serif;
     background: #e0f0ff;
     margin: 0;
     padding: 0;
@@ -13,12 +13,129 @@ header {
     padding: 40px;
 }
 
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraphes du header indépendants */
+.header-subtitle {
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    color: #e0f7ff;
+    margin-top: 0;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Optionnel : animation légère */
+@keyframes fadeSlideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1,
+header .header-subtitle {
+    animation: fadeSlideDown 0.8s ease forwards;
+}
+
+
+
 /* Container général */
 section {
     max-width: 1000px;
     margin: auto;
     padding: 40px 20px;
 }
+
+/* Style de base pour les h2 */
+h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    color: #0056b3;
+    background: linear-gradient(90deg, #3399ff, #00aaff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: color 0.3s ease;
+}
+
+/* Ligne animée sous le titre */
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #0077ff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.4s ease;
+}
+
+/* Hover ou animation sur h2 */
+h2:hover::after {
+    transform: scaleX(1);
+}
+
+/* Animation d'apparition au chargement */
+@keyframes fadeSlideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    animation: fadeSlideIn 0.8s ease forwards;
+}
+
+/* Paragraphes */
+p {
+    font-size: 1.1rem;
+    /* un peu plus grand */
+    line-height: 1.7;
+    /* espace agréable entre les lignes */
+    color: #333;
+    /* gris foncé pour lisibilité */
+    margin-bottom: 15px;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
 
 /* Cartes projets */
 .project {
