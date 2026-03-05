@@ -23,6 +23,15 @@ section {
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    /* animation douce */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    /* lève légèrement la carte */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    /* ombre plus prononcée */
 }
 
 a {
