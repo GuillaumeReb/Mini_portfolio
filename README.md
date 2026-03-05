@@ -2,7 +2,7 @@
 
 📌 **À propos du projet**
 
-Ce mini-portfolio a été conçu pour présenter mes compétences, mes projets et mes liens professionnels de manière simple et moderne. Il est optimisé pour GitHub Pages et met en avant mes projets PHP, front-end et web.
+Ce mini-portfolio a été conçu pour présenter mes compétences, mes projets et mes liens professionnels de manière simple et moderne. Il est optimisé pour GitHub Pages et met en avant mes projets.
 
 🗓️ **Date de création**  
 Mars 2026
@@ -10,18 +10,11 @@ Mars 2026
 🏫 **Réalisé dans le cadre de**  
 🎓 Projet personnel / Portfolio professionnel
 
-🔗 **Lien GitHub**  
-[Voir le code sur GitHub](https://github.com/tonpseudo/mini-portfolio)
-
-🚀 **Démo en ligne**  
-[Voir la démo sur GitHub Pages](https://tonpseudo.github.io/mini-portfolio)
-
 ---
 
 🛠️ **Technologies utilisées**
 
-- **Frontend** : HTML, CSS, JavaScript
-- **Framework CSS** : Tailwind CSS (optionnel, si utilisé)
+- **Frontend** : HTML, CSS
 - **Animations & design** : CSS3 (hover, dégradés, transitions)
 - **Outils de qualité** : Validation HTML/CSS, responsive design
 
@@ -36,7 +29,7 @@ Il présente :
 - Des **sections h2 stylisées**
 - Des **cartes projets interactives** avec dégradés de bleu et hover
 - Des **paragraphes lisibles et animés**
-- Des **liens vers mes projets GitHub et mon portfolio complet**
+- Des **liens vers mes projets GitHub**
 
 Le design est **responsive**, moderne et visuellement attractif pour les recruteurs et clients.
 
@@ -44,7 +37,7 @@ Le design est **responsive**, moderne et visuellement attractif pour les recrute
 
 🎯 **Compétences mises en avant**
 
-- Développement **front-end** : HTML, CSS, JS
+- Développement **front-end** : HTML, CSS
 - **Design interactif** : animations CSS, hover effects, dégradés
 - Structuration et présentation professionnelle d’un portfolio
 - Organisation de projets sur GitHub
@@ -53,11 +46,14 @@ Le design est **responsive**, moderne et visuellement attractif pour les recrute
 ---
 
 🏗️ **Architecture technique**
+
+```
 mini-portfolio/
 ├── index.html # Page principale
 ├── style.css # Styles principaux
 ├── script.js # Scripts JS optionnels
 └── images/ # Assets images
+```
 
 ---
 
