@@ -149,6 +149,25 @@ p {
     animation: fadeInUp 0.8s ease forwards;
 }
 
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Aligne les tags au milieu de la carte */
+    gap: 8px;
+    margin-top: 15px;
+}
+
+/* On s'assure que .project-tags (dans les fiches projets) 
+   et .skill-tags partagent le même comportement */
+.project-tags,
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
