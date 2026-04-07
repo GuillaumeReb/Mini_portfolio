@@ -225,7 +225,7 @@ p {
     /* Espace aéré entre titre et description */
 }
 
-/* Le style "Badge Fun" adapté */
+/* Le style "Badge" adapté */
 /* --- Base commune pour tous les tags --- */
 .tag {
     display: inline-block;
@@ -319,6 +319,12 @@ p {
 a {
     color: #0077ff;
     text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+    font-size: large;
+    font-weight: bold;
 }
 
 #contact {
