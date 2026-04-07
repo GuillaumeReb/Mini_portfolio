@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@600;700&display=swap');
+
+:root {
+    --primary-blue: #0077ff;
+    --dark-blue: #0056b3;
+    --light-bg: #e0f0ff;
+    --card-bg: #ffffff;
+}
+
 body {
     font-family: 'Poppins', 'Inter', 'Segoe UI', sans-serif;
     background: #e0f0ff;
@@ -196,4 +205,18 @@ p {
 a {
     color: #0077ff;
     text-decoration: none;
+}
+
+.btn-contact {
+    display: inline-block;
+    background: var(--primary-blue);
+    color: white !important;
+    padding: 12px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.btn-contact:hover {
+    background: var(--dark-blue);
+    transform: scale(1.05);
 }
