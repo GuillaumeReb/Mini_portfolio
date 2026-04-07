@@ -195,6 +195,77 @@ p {
     transition: color 0.35s ease;
 }
 
+/* Tags */
+
+/* Container des tags dans la carte */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+    /* Espace aéré entre titre et description */
+}
+
+/* Le style "Badge Fun" adapté */
+/* --- Base commune pour tous les tags --- */
+.tag {
+    display: inline-block;
+    padding: 5px 14px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: default;
+    border: 1px solid transparent;
+}
+
+/* --- Variantes de couleurs --- */
+
+/* TECH (Bleu) - Pour les langages et frameworks */
+.tag.tech {
+    background: #e0f0ff;
+    color: #0077ff;
+    border-color: #b3d7ff;
+}
+
+.tag.tech:hover {
+    background: #0077ff;
+    color: white;
+    transform: scale(1.1) rotate(-3deg);
+    box-shadow: 0 5px 15px rgba(0, 119, 255, 0.3);
+}
+
+/* TOOL (Vert) - Pour Git, Pipedrive, VS Code, etc. */
+.tag.tool {
+    background: #e6fffa;
+    color: #00a884;
+    border-color: #b2f5ea;
+}
+
+.tag.tool:hover {
+    background: #00a884;
+    color: white;
+    transform: scale(1.1) rotate(3deg);
+    /* Rotation inverse pour varier */
+    box-shadow: 0 5px 15px rgba(0, 168, 132, 0.3);
+}
+
+/* DESIGN/UI (Violet ou Orange) - Pour Responsive, UX, CSS */
+.tag.design {
+    background: #f3f0ff;
+    color: #7950f2;
+    border-color: #d0bfff;
+}
+
+.tag.design:hover {
+    background: #7950f2;
+    color: white;
+    transform: scale(1.1) translateY(-5px);
+    box-shadow: 0 5px 15px rgba(121, 80, 242, 0.3);
+}
+
 .project p {
     color: #333;
 }
