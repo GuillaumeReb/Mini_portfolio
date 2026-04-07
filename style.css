@@ -149,6 +149,30 @@ p {
     animation: fadeInUp 0.8s ease forwards;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+    border-bottom: 4px solid #0077ff;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
 
 /* Cartes projets */
 .project {
